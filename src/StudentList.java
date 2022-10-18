@@ -23,9 +23,9 @@ public class StudentList {
     }
 
     public static boolean remove(Student student) {
-        for (Student s : students) {
-            if (s.getStudentId() == student.getStudentId()) {
-                students.remove(s);
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getStudentId() == student.getStudentId()) {
+                students.remove(i);
                 return true;
             }
         }

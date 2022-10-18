@@ -37,7 +37,7 @@ public class Student {
         Student.lastname = lastname;
     }
 
-    public static String getName() {
+    public String getName() {
         return firstname + " " + lastname;
     }
 

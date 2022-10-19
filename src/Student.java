@@ -1,6 +1,7 @@
 import java.util.Date;
 
 public class Student {
+    //Fields
     private static String firstname;
     private static String lastname;
     private static long studentId;
@@ -9,6 +10,7 @@ public class Student {
 
     public enum SortKey {FIRSTNAME, LASTNAME, STUDENT_ID, WEIGHT, BIRTHDAY}
 
+    //Constructors
     Student() {
         this(null, null, studentId, 0, new Date(0));
     }
@@ -20,6 +22,8 @@ public class Student {
         Student.weight = weight;
         Student.birthday = birthday;
     }
+
+    //Getters and Setters
 
     public String getFirstname() {
         return firstname;

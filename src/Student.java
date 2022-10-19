@@ -49,6 +49,10 @@ public class Student {
         return studentId;
     }
 
+    private static void setStudentId(long studentId) {
+        Student.studentId = studentId;
+    }
+
     public double getWeight() {
         return weight;
     }

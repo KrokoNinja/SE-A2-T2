@@ -2,70 +2,70 @@ import java.util.Date;
 
 public class Student {
     //Fields
-    private static String firstname;
-    private static String lastname;
-    private static long studentId;
-    private static double weight;
-    private static Date birthday;
+    private String firstname;
+    private String lastname;
+    private long studentId;
+    private double weight;
+    private Date birthday;
 
-    public enum SortKey {FIRSTNAME, LASTNAME, STUDENT_ID, WEIGHT, BIRTHDAY}
+    private enum SortKey {FIRSTNAME, LASTNAME, STUDENT_ID, WEIGHT, BIRTHDAY}
 
     //Constructors
     Student() {
-        this(null, null, studentId, 0, new Date(0));
+        this(null, null, 0, 0, new Date(0));
     }
 
     Student(String firstname, String lastname, long studentId, double weight, Date birthday) {
-        Student.firstname = firstname;
-        Student.lastname = lastname;
-        Student.studentId = studentId;
-        Student.weight = weight;
-        Student.birthday = birthday;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.studentId = studentId;
+        this.weight = weight;
+        this.birthday = birthday;
     }
 
     //Getters and Setters
 
-    public String getFirstname() {
+    public final String getFirstname() {
         return firstname;
     }
 
-    public static void setFirstname(String firstname) {
-        Student.firstname = firstname;
+    public final void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastname() {
+    public final String getLastname() {
         return lastname;
     }
 
-    public static void setLastname(String lastname) {
-        Student.lastname = lastname;
+    public final void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    public String getName() {
+    public final String getName() {
         return firstname + " " + lastname;
     }
 
-    public long getStudentId() {
+    public final long getStudentId() {
         return studentId;
     }
 
-    private static void setStudentId(long studentId) {
-        Student.studentId = studentId;
+    private void setStudentId(long studentId) {
+        this.studentId = studentId;
     }
 
-    public double getWeight() {
+    public final double getWeight() {
         return weight;
     }
 
-    public static void setWeight(double weight) {
-        Student.weight = weight;
+    public final void setWeight(double weight) {
+        this.weight = weight;
     }
 
-    public Date getBirthday() {
+    public final Date getBirthday() {
         return birthday;
     }
 
-    public static void setBirthday(Date birthday) {
-        Student.birthday = birthday;
+    public final void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 }

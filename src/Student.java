@@ -68,4 +68,12 @@ public class Student {
     public final void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
+
+    public String toString() {
+        return this.getFirstname() + " " +
+                this.getLastname() + " " +
+                this.getStudentId() + " " +
+                this.getWeight() + " " +
+                this.getBirthday().getDate() + "." + (this.getBirthday().getMonth()+1) + "." + (this.getBirthday().getYear()+1900) ;
+    }
 }

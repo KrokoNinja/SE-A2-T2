@@ -12,7 +12,7 @@ public class StudentList {
     }
 
     StudentList(StudentList studentList) {
-        students = new ArrayList<>();
+        students = new ArrayList<>(studentList.students);
     }
 
     //Methods
@@ -112,7 +112,7 @@ public class StudentList {
 
     /**
      * Should the list contain students with the age,
-     * return all positions of the students int the list,
+     * return all positions of the student's in the list,
      * else return an empty list.
      * @param age The age from the student you search for
      * @return int[] Array with positions of the students with the same age
@@ -129,7 +129,7 @@ public class StudentList {
             if (month < nowMonth) {                                     //Birthday not yet this year
                 result--;                                               //Decrement the age because the student will get older this year
             }
-            else if (month == nowMonth) {                               //The students birthday is in the current month
+            else if (month == nowMonth) {                               //The student's birthday is in the current month
                 int nowDay = now.getDate();                             //Now we have to check the Day
                 int day = students.get(i).getBirthday().getDate();      //Get the students Birthday
                 if (day > nowDay) {                                     //if the day is to come
@@ -164,6 +164,14 @@ public class StudentList {
             }
         }
         return false;
+    }
+
+    public String toString() {
+        String str = "";
+        for (Student s : students) {
+            str += s.toString() + "\n";
+        }
+        return str;
     }
 }
 

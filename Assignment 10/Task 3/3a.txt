@@ -1,0 +1,7 @@
+a) 5 Equivalence classes that would be wise to test for this method are:
+
+Input string contains only letters from [a-z,A-Z]
+Input string contains only numbers from [0-9]
+Input string contains a mix of letters and numbers
+Input string contains duplicate characters
+Input string contains special characters other than letters and numbers.

@@ -1,0 +1,4 @@
+c)
+The minimum number of different test cases needed to achieve 100% branch coverage would be 4.
+This is because the method has 2 branches, one for the if statement on line 3 and one for the while loop on line 15.
+In order to achieve 100% branch coverage, both branches must be executed at least once with the conditions evaluated as true and false, and also one case that e=0, this way the second if statement on line 9 will be evaluated as true.

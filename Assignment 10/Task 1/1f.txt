@@ -1,0 +1,16 @@
+f)
+For Test Case 1: Positive Concrete test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13.
+Both branches will be executed: If statement on line 7 as true and the while loop on line 6 as true.
+Statement coverage: 100%
+Branch coverage: 100%
+
+For Test Case 2: Negative Concrete test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 10 -> 11 -> 12 -> 13.
+Both branches will be executed: If statement on line 7 as false and the while loop on line 6 as false.
+Statement coverage: 100%
+Branch coverage: 100%
+
+It is important to note that, even though 100% of statement coverage has been achieved, branch coverage has been achieved as well, this is because, the if statement and the while loop have been executed with the conditions evaluated as true and false, this way all the posibilities have been explored.

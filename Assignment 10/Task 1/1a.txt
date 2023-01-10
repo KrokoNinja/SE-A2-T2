@@ -1,0 +1,23 @@
+Positive logical test case:
+Pre-condition: base > 0 and all elements in the scores array are greater than 0
+Input: scores={5, 10, 15}, base=5
+Output: (5/5) + (10/5) + (15/5) = 4
+Post-condition: baseScore = 4
+
+Negative logical test case:
+Pre-condition: base <= 0
+Input: scores={5, 10, 15}, base=-1
+Output: baseScore = 0
+Post-condition: baseScore = 0
+
+Positive concrete test case:
+Pre-condition: base > 0 and all elements in the scores array are greater than 0
+Input: scores={5, 10, 15}, base=5
+Output: (5/5) + (10/5) + (15/5) = 4
+Post-condition: baseScore = 4
+
+Negative concrete test case:
+Pre-condition: all elements in the scores array are less than or equal to 0
+Input: scores={0, 0, 0}, base=5
+Output: baseScore = 0
+Post-condition: baseScore = 0

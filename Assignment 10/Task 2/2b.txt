@@ -1,0 +1,4 @@
+b)
+The minimum number of different test cases needed to achieve 100% statement coverage would be 2.
+One case for the first if-statement on line 3 to be evaluated as true and another case for it to be evaluated as false.
+This way, every line in the code will be executed at least once, thus achieving 100% statement coverage (C0).

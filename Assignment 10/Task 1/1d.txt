@@ -1,0 +1,5 @@
+d)
+The minimum number of different test cases needed to achieve 100% statement coverage would be 2.
+One case that satisfies the condition on line 7 (base > 0 && scores[counter] > 0) and another case that doesn't satisfy that condition, 
+where base <= 0 or scores[counter] <= 0. 
+This way, every line in the code will be executed at least once, thus achieving 100% statement coverage (C0).

@@ -1,0 +1,28 @@
+e)
+For Test Case 1: Positive logical test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 4 -> 7 -> 9 -> 11 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18 -> 19 -> 20
+Both branches will be executed: If statement on line 3 as true and the while loop on line 15 as true.
+Statement coverage: 100%
+Branch coverage: 100%
+
+For Test Case 2: Negative logical test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 6 -> 7 -> 9 -> 11 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18 -> 19 -> 20
+Both branches will be executed: If statement on line 3 as false and the while loop on line 15 as true.
+Statement coverage: 100%
+Branch coverage: 100%
+
+For Test Case 3: Positive concrete test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 7 -> 9 -> 10 -> 20
+Both branches will be executed: If statement on line 3 as false and the while loop on line 15 as false.
+Statement coverage: 100%
+Branch coverage: 100%
+
+For Test Case 4: Negative concrete test case
+
+All statements will be executed and the path traversed will be: 1 -> 2 -> 3 -> 6 -> 7 -> 9 -> 11 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18 -> 19 -> 20
+Both branches will be executed: If statement on line 3 as false and the while loop on line 15 as true.
+Statement coverage: 100%
+Branch coverage: 100%
